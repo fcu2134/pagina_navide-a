@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #EFEFEF;
+	color: #363639;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #17324f;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+pre {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff0a;
+}
+
+pre span:first-child {
+  color: rgb(255, 255, 0);
+}
+
+pre span:last-child {
+  color: #795548;
+}
+
+.snow {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -100px;
+}
+
+.snow-floor {
+  width: 100%;
+  height: 3%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.title {
+  color: #fff;
+  font-family: "Lobster";
+  font-weight: lighter;
+}
+
+@keyframes fall {
+  0% {
+    top: -100px;
+  }
+
+  100% {
+    top: 100vh;
+  }
+}
+
+
+
+.portada {
+	width: 100%;
+    background-image: url('../img/christmas-tree-2928142_1920.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: #ffffff;
+	min-height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+}
+
+.portada.oculta {
+	transform: translateY(100%);
+}
+
+.portada .header {
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.portada .header .logotipo {
+	font-size: 50px;
+	font-size: 900;
+	margin-bottom: 20px;
+}
+
+.portada .header .mensaje {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+
+main {
+	max-width: 1000px;
+	margin: auto;
+	width: 90%;
+	padding: 60px 0;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: left;
+}
+
+
+
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.simply-section {
+	background: #949494;
+	width: 180px;
+	height: 180px;
+	margin: 0 20px;
+	border-radius: 50px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simply-amount {
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.simply-word {
+	font-weight: 300;
+	font-size: 30px;
+}
+
+
+
+
+
+.redes-sociales .btn-red-social {
+	padding: 16px 0;
+	display: inline-block;
+	min-width: 120px;
+	border-radius: 5px;
+	background: #ff4040;
+	color: #000000;
+	font-size: 30px;
+	margin: 0 20px;
+	transition: .3s ease all;
+}
+
+.redes-sociales .btn-red-social:hover {
+	box-shadow: 0px 0px 50px 10px rgba(0,0,0,.15);
+}
